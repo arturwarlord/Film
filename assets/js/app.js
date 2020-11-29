@@ -1,8 +1,7 @@
 console.log("tabs");
 console.log("modal");
 
-const isMobileDevice = window.navigator.userAgent.toLowerCase().includes("mobi");
-if(!isMobileDevice){
+
 $(document).ready(documentReady);
 
 function documentReady()
@@ -146,7 +145,7 @@ function documentReady()
 
 
 }
-}
+
 
 $(function(){
     $(".header__search").click(function(){
