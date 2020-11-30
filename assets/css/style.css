@@ -1,23 +1,45 @@
 /* Default styles */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: black;
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    background-image: url("../img/snow.png"), url("../img/snow3.png"), url("../img/snow2.png");
+    -webkit-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
 }
 
-#snow-animation-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    50% {
+        background-color: #b4cfe0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
 }
 
 /* Blocks */
 .header__inner {
+    position: relative;
     margin: 20px;
     padding: 10px 20px;
     background: #000000;
@@ -45,7 +67,7 @@ body {
 .header__inner-bottom {
     margin: 0 20px;
     padding: 5px 20px;
-    background: #000000;
+    background: rgba(0, 0, 0, 0.64);
     border: 1px solid rgba(159, 159, 159, 0.31);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -128,6 +150,15 @@ body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .header__nav {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
 }
 
 .header__profile-info {
@@ -213,30 +244,68 @@ body {
     }
 }
 
+.header__menu--burger {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu--burger {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.63);
+        padding: 50px 20px;
+    }
+
+    .header__menu--burger ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .header__menu--burger a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        -webkit-transition: 0.3s linear;
+        -o-transition: 0.3s linear;
+        transition: 0.3s linear;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .header__menu--burger a:hover {
+        color: #f19818;
+    }
+
+    .header__menu--burger li {
+        padding: 0;
+        margin: 0 0 20px 0;
+        list-style: none;
+    }
+}
+
 .header__search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 20px;
-}
-
-.header__search input {
-    -webkit-transition: .5s linear;
-    -o-transition: .5s linear;
-    transition: .5s linear;
-    margin-right: 10px;
-    display: none;
-    outline: none;
-}
-
-.header__search a {
     color: white;
     -webkit-transition: .3s linear;
     -o-transition: .3s linear;
     transition: .3s linear;
 }
 
-.header__search a:hover {
+.header__search:hover {
     color: #f19818;
 }
 
@@ -248,7 +317,7 @@ body {
 
 .header__profile {
     margin-left: 20px;
-    background: blue;
+    background: #f19818;
     padding: 0px 5px;
     border-radius: 50%;
 }
@@ -272,6 +341,47 @@ body {
 
 .header-search {
     display: none;
+}
+
+.burger__ico {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .burger__ico {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 4px);
+    -ms-transform: rotate(-45deg) translate(-9px, 4px);
+    transform: rotate(-45deg) translate(-9px, 4px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    -ms-transform: rotate(45deg) translate(-8px, -5px);
+    transform: rotate(45deg) translate(-8px, -5px);
 }
 
 /* Vendor libs */

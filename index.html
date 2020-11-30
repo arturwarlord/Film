@@ -15,12 +15,18 @@
 <body>
 
     
-    <div id="snow-animation-container"></div>
-    
     <div class="header">
         <div class="container">
     
             <div class="header__inner">
+               <nav class="header__menu--burger">
+                       <ul>
+                        <li><a href="" class="header__link">фильмы</a></li>
+                        <li><a href="" class="header__link">сериалы</a></li>
+                        <li><a href="" class="header__link">мультфильмы</a></li>
+                        <li><a href="" class="header__link">подборки</a></li>
+                       </ul>
+                    </nav>
                 <div class="header__logo"><a href="#"><img src="assets/img/header__logo.png" alt=""></a></div>
                 <div class="header__nav">
                     <nav class="header__menu">
@@ -34,8 +40,13 @@
     
                     <div class="header__profile-info">
                         <div class="header__like"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
-                        <div class="header__search"><input class="search__input" type="text"><a class="lupa" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                        <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i></div>
                         <div class="header__profile"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="burger__ico" onclick="myFunction(this)">
+                           <div class="bar1"></div>
+                           <div class="bar2"></div>
+                           <div class="bar3"></div>
                     </div>
                 </div>
             </div>
