@@ -37,7 +37,16 @@ body {
     }
 }
 
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
 /* Blocks */
+.header {
+    position: relative;
+}
+
 .header__inner {
     position: relative;
     margin: 20px;
@@ -65,7 +74,6 @@ body {
 }
 
 .header__inner-bottom {
-    margin: 0 20px;
     padding: 5px 20px;
     background: rgba(0, 0, 0, 0.64);
     border: 1px solid rgba(159, 159, 159, 0.31);
@@ -78,6 +86,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    z-index: 111111;
 }
 
 .header__inner-bottom input {
@@ -341,6 +350,10 @@ body {
 
 .header-search {
     display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
 }
 
 .burger__ico {
@@ -382,6 +395,34 @@ body {
     -webkit-transform: rotate(45deg) translate(-8px, -6px);
     -ms-transform: rotate(45deg) translate(-8px, -5px);
     transform: rotate(45deg) translate(-8px, -5px);
+}
+
+.slider__film {
+    overflow: hidden;
+    height: 500px;
+}
+
+.film-slider {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.film-slider__item {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 20px;
+    height: auto;
+}
+
+.film-slider__item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .film-slider__item {
+        margin: 0 10px;
+    }
 }
 
 /* Vendor libs */

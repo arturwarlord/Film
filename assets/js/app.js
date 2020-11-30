@@ -23,3 +23,13 @@ $(function(){
 function myFunction(x) {
   x.classList.toggle("change");
 }
+
+
+
+new Swiper('.film-slider', {
+    loop: true,
+
+    speed: 1000,
+
+    autoplay: true,
+});
