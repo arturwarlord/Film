@@ -740,8 +740,11 @@ body {
     top: 50px;
     left: 75px;
     font-size: 80px;
-    color: white;
     display: none;
+}
+
+.films__item span a {
+    color: white;
 }
 
 .films__item:hover span {
@@ -968,6 +971,13 @@ body {
     background-color: rgba(0, 0, 0, 0.49);
     width: 100%;
     height: auto;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+    .video__content {
+        margin-bottom: 50px;
+    }
 }
 
 .video__inner {
@@ -1059,20 +1069,22 @@ body {
     text-indent: 30px;
 }
 
-.codegena {
-    position: relative;
-    width: 80%;
-    height: 0;
-    padding-bottom: 45%;
-    margin: 0 auto;
+.video__rolik {
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
-.codegena .iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video__controls iframe {
+    height: 500px;
+    width: 80%;
+}
+
+@media (max-width: 900px) {
+    .video__controls iframe {
+        height: 400px;
+        width: 95%;
+    }
 }
 
 /* Vendor libs */
