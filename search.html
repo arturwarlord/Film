@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Film</title>
+</head>
+<body>
+
+    
+    <!--
+    <script type="text/javascript">
+    
+    </script>
+    
+    
+    <input type="text" id="text-to-find" value="">
+    <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
+    <div class="wrapper">
+    
+    -->
+    
+    
+    
+    <div class="header">
+        <div class="container">
+    
+            <div class="header__inner">
+               <nav class="header__menu--burger">
+                       <ul>
+                        <li><a href="" class="header__link">фильмы</a></li>
+                        <li><a href="" class="header__link">сериалы</a></li>
+                        <li><a href="" class="header__link">мультфильмы</a></li>
+                        <li><a href="" class="header__link">подборки</a></li>
+                       </ul>
+                    </nav>
+                <div class="header__logo"><a href="#"><img src="assets/img/header__logo.png" alt=""></a></div>
+                <div class="header__nav">
+                    <nav class="header__menu">
+                       <ul>
+                        <li><a href="" class="header__link">фильмы</a></li>
+                        <li><a href="" class="header__link">сериалы</a></li>
+                        <li><a href="" class="header__link">мультфильмы</a></li>
+                        <li><a href="" class="header__link">подборки</a></li>
+                       </ul>
+                    </nav>
+    
+                    <div class="header__profile-info">
+                        <div class="header__like"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+                        <div class="header__search"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        <div class="header__profile"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="burger__ico" onclick="myFunction(this)">
+                           <div class="bar1"></div>
+                           <div class="bar2"></div>
+                           <div class="bar3"></div>
+                    </div>
+                </div>
+    
+    
+    
+    
+                <div class="header-search">
+                    <div class="container">
+    
+                        <form action="" class="header__inner-bottom">
+                            <input type="search" placeholder="Поиск" id="text-to-find"><button onclick="javascript: FindOnPage('text-to-find'); return false;" type="submit"><a class="lupa" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></button>
+                        </form>
+    
+                    </div>
+                </div>
+            </div>
+    
+    <div class="mobile__search">
+    <div class="container">
+        <div class="box">
+            <div class="back__mobile">
+            <div class="flip__bottom">
+                <input type="text" placeholder="Поиск"><button type="button"><a class="lupa" href="#"><i class="fa fa-search" aria-hidden="true"></i></a></button>
+                <button type="button" class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+     </div>
+            <div class="first__mobile">
+      <div class="flip__inner">
+                <nav class="header__menu--burger">
+                       <ul>
+                        <li><a href="" class="header__link">фильмы</a></li>
+                        <li><a href="" class="header__link">сериалы</a></li>
+                        <li><a href="" class="header__link">мультфильмы</a></li>
+                        <li><a href="" class="header__link">подборки</a></li>
+                       </ul>
+                </nav>
+                <div class="header__logo"><a href="#"><img src="assets/img/header__logo.png" alt=""></a></div>
+                <div class="header__nav">
+                    <div class="header__profile-info">
+                        <div class="header__like"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+                        <div class="search__ico"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        <div class="header__profile"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="burger__ico" onclick="myFunction(this)">
+                           <div class="bar1"></div>
+                           <div class="bar2"></div>
+                           <div class="bar3"></div>
+                    </div>
+                </div>
+    
+    
+         </div>
+      </div>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+            <div class="slider__film">
+    <div class="film-slider swiper-container">
+        <div class="film-slider__wrapper swiper-wrapper">
+    
+    
+                <div class="film-slider__slide swiper-slide">
+    
+                    <div class="film-slider__item"><img src="assets/img/banner_1.jpg" alt=""></div>
+    
+                </div>
+    
+    
+                <div class="film-slider__slide swiper-slide">
+    
+                    <div class="film-slider__item"><img src="assets/img/banner_2.jpg" loading="lazy" alt=""></div>
+    
+                </div>
+    
+                <div class="film-slider__slide swiper-slide">
+    
+                    <div class="film-slider__item"><img src="assets/img/banner_4.jpg" loading="lazy" alt=""></div>
+    
+                </div>
+    
+                <div class="film-slider__slide swiper-slide">
+    
+                    <div class="film-slider__item"><img src="assets/img/banner_5.jpg" loading="lazy" alt=""></div>
+    
+                </div>
+    
+                <div class="film-slider__slide swiper-slide">
+    
+                    <div class="film-slider__item"><img src="assets/img/banner_6.jpg" loading="lazy" alt=""></div>
+    
+                </div>
+    
+    
+    
+            </div><!-- ///// WRAPER //// -->
+    </div><!-- ///// SLIDER //// -->
+    </div>
+        </div>
+    </div>
+    
+    
+    <div class="new__films">
+        <div class="container">
+    
+            <div class="new__title"><span>Новые</span> фильмы</div>
+    <div class="film_wraper">
+           <div class=""></div>
+            <div class="films">
+    
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href="film.html"><img src="assets/img/film/video_ico1.png" alt=""></a></div>
+                    <div class="films__title"><b>Алладин</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><a href="film.html"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico2.png" alt=""></a></div>
+                    <div class="films__title"><b>Дом</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico3.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico4.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico5.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico6.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico7.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico7.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico3.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+                <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico2.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+    
+           <div class="films__item">
+                    <div class="films__ico"><a href=""><img src="assets/img/film/video_ico5.png" alt=""></a></div>
+                    <div class="films__title"><b>Rumors</b><i>4серии</i></div>
+                    <div class="films__year">2002</div>
+    
+                    <span><i class="fa fa-play-circle-o" aria-hidden="true"></i></span>
+                </div>
+    
+    
+            </div>
+    </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    </div>
+    
+
+
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
