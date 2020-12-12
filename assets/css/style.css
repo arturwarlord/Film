@@ -669,56 +669,74 @@ body {
 
 @media (max-width: 1430px) {
     .films {
-        -webkit-columns: 0;
-        -moz-columns: 0;
-        columns: 0;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 2vw;
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        columns: 4;
+        -webkit-column-gap: 100px;
+        -moz-column-gap: 100px;
+        column-gap: 100px;
     }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1220px) {
     .films {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 4vw;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
     }
 }
 
 @media (max-width: 1030px) {
     .films {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5vw;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 970px) {
     .films {
-        grid-gap: 4vw;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 2fr 2fr 2fr;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        columns: 3;
+        -webkit-column-gap: 100px;
+        -moz-column-gap: 100px;
+        column-gap: 100px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 970px) {
     .films {
-        grid-gap: 2vw;
+        -webkit-column-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
     }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 630px) {
     .films {
-        grid-gap: 0vw;
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .films {
+        -webkit-column-gap: 10px;
+        -moz-column-gap: 10px;
+        column-gap: 10px;
     }
 }
 
 @media (max-width: 360px) {
     .films {
-        grid-template-columns: 2fr 2fr;
-        grid-gap: 10vw;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
     }
 }
 
@@ -786,6 +804,12 @@ body {
     .films__item span {
         top: 40px;
         left: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .films__item {
+        padding: 5px;
     }
 }
 
@@ -920,6 +944,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
